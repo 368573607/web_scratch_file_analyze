@@ -1,4 +1,21 @@
 {
+  "name": "web_scratch_file_analyze",
+  "description": "基于scratch_file_anlyze的可视化scratch文件分析器",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/368573607/web_scratch_file_analyze.git"
+  },
+  "author": "xuhuading@foxmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/368573607/web_scratch_file_analyze/issues"
+  },
+  "homepage": "https://github.com/368573607/web_scratch_file_analyze#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
@@ -9,6 +26,7 @@
   },
   "dependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "scratch_file_analyze": "^1.0.0"
   }
 }
