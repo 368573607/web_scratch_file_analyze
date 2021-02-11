@@ -2,7 +2,7 @@
   "name": "web_scratch_file_analyze",
   "description": "基于scratch_file_anlyze的可视化scratch文件分析器",
   "version": "1.0.0",
-  "main": "./src/index.js",
+  "main": "./dist/main.js",
   "scripts": {
     "build": "webpack --mode production",
     "devbuild":"webpack --mode development",
