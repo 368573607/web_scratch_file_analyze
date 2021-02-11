@@ -33,6 +33,7 @@ class App extends React.Component {
                     解析结果：
                     {JSON.stringify(this.state.result)}
                 </p>
+                <p><a href="https://github.com/368573607/web_scratch_file_analyze/tree/add">源代码</a></p>
             </div>
         )
     }
