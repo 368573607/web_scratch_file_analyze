@@ -3,7 +3,7 @@ const ReactDOM = require("react-dom");
 
 const App = require("./App");
 
-const root = document.createElement("div");
+let root = document.createElement("div");
 root.id = "root";
 
 document.body.appendChild(root);
