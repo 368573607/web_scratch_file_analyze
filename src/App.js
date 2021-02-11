@@ -5,19 +5,19 @@ class App extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = { value: "{}", jsonvalue: {}, result: {} };
+        this.state = { value: "{}", result: {} };
 
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(event) {
         this.setState({ value: event.target.value });
-        this.setState({ jsonvalue: JSON.parse(this.state.value) });
+        console.log(this.state.value);
         this.analyze();
     }
 
     analyze() {
-        analyzefile(this.state.jsonvalue).then((resu) => {
+        analyzefile(JSON.parse(this.state.value)).then((resu) => {
             this.setState({ result: resu });
         }).catch((err) => {
             this.setState({ result: err });
@@ -27,7 +27,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>Scratch分析器</h1>
+                <h1>Scratch3 文件分析器</h1>
                 <textarea value={this.state.value} onChange={this.handleChange} />
                 <p>
                     解析结果：
