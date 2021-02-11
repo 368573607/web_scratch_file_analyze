@@ -8,7 +8,6 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].js"
     },
-    mode: "production",
     module: {
         rules: [
             {
@@ -17,28 +16,22 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     options: {
-                        babelrc: false,
                         presets: [
                             "@babel/preset-react",
-                            ["@babel/preset-env", {
-                                "targets": {
-                                    "chrome":70
-                                },
-                                "useBuiltIns": "usage",
-                                "corejs": 3
-                            }]
+                            "@babel/preset-env"
                         ]
                     }
                 }
             }, {
                 test: /\.(png|jpg|svg|gif)$/,
-                use:"asset/inline"
+                use: "asset/inline"
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template:"./src/html/template.html",
-            filename:"index.html"
-        })    ]
+            template: "./src/html/template.html",
+            filename: "index.html"
+        })
+    ]
 }
