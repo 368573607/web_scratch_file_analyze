@@ -1,4 +1,4 @@
-# web_scratch_file_analyze
+# web_scratch_file_analyze（已废弃，正在制作更好的替代方案）
 
 Scratch 文件分析器
 
